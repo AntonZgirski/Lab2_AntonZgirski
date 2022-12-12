@@ -198,6 +198,8 @@ namespace Lab2_AntonZgirski
 
         print.PrintMas(20, mass);
       }
+
+
       // №8
       void SortName()
       {
@@ -276,9 +278,8 @@ namespace Lab2_AntonZgirski
         StringBuilder sb = new StringBuilder(letters.ToLower());
         sb.Insert(3, '/');
         sb.Insert(7, '/');
-        sb.Insert(9, '/');
-        string result = String.Format("{0: ###/###/#/#}", letters);
-        Console.WriteLine("№3\n" + result);
+        sb.Insert(9, '/');        
+        Console.WriteLine("№3\n" + sb.ToString());
       }
 
       void PrintLetUp()
@@ -332,7 +333,7 @@ namespace Lab2_AntonZgirski
     {
       for (int i = 0; i < numline; i++)
       {
-        Console.Write(args[i] + "\t");
+        Console.Write(args[i] + "\t ");
       }
       Console.WriteLine();
     }
